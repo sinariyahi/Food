@@ -1,0 +1,399 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    font-family: sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .4s;
+    color: #000;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+/* -------------Header------------ */
+
+header {
+    background: linear-gradient(to right, #ff0000, #000000);
+    justify-content: space-around;
+    padding: 5px 0;
+    position: relative;
+    align-items: center;
+}
+
+.title {
+    color: leane;
+    align-items: center;
+}
+
+
+.search-icon {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------Slide------------- */
+
+.slide {
+    background-image: url('../image/vegetables-set-left-black-slate.jpg');
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 62%;
+    position: relative;
+}
+
+.slide-container {
+    flex-direction: column;
+    justify-content: center;
+    height: 31vw;
+    align-items: flex-start;
+}
+
+.slide-container h3 {
+    margin: 0 5vw;
+    font-size: 6vw;
+    font-weight: 500;
+    color: rgb(255, 90, 90);
+    text-shadow: 0px 5px 30px rgba(0, 0, 0, .8);
+}
+
+.slide-text {
+    justify-content: center;
+}
+
+.slide-container p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin: 0 5vw 15px 6vw;
+    color: rgb(255, 90, 90);
+    text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+
+}
+
+.slide-btn {
+    background-image: linear-gradient(to right, #010101 0%, #de0000 51%, #010101 100%);
+    margin-left: 6vw;
+    padding: 1vw 2vw;
+    font-family: sans-serif;
+    font-size: 1.7vw;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+
+.slide-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 15px #eee;
+}
+
+/* -----------Search-bar----------- */
+
+.search-bar {
+    background-color: #1b1b1b;
+    flex-direction: column;
+    padding: 20px 25px;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.search-bar h2 {
+    font-size: 4vw;
+    color: rgb(255, 90, 90);
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+}
+
+.search-form {
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 1.9vw 5vw;
+    background-color: transparent;
+    border: 1px solid #ff1c58;
+    border-radius: 1px;
+    margin: 10px;
+    color: white;
+    outline: none;
+}
+
+.search-btn {
+    color: white;
+    background-image: linear-gradient(to right, #000000 0%, #de0000 51%, #000000 100%);
+    padding: 1.5vw 4vw;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    transition: 0.3s;
+    background-size: 200% auto;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 7px #eee;
+}
+
+/* ----------food---------- */
+
+.food-heading {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.food-title {
+    font-family: sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #040e27;
+    margin: 10px;
+}
+
+.food-description {
+    font-size: 2vw;
+    font-family: sans-serif;
+    color: #7a838b;
+    line-height: 2vw;
+    font-weight: 400;
+}
+
+.food-container {
+    display: grid;
+    margin: 2vw 10vw;
+    gap: 2vw 0;
+}
+
+.food-container article {
+    position: relative;
+}
+
+.food-container article:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.6) 100%);
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.food-img-info {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    bottom: 2vw;
+    z-index: 1000;
+}
+
+.food-img-info h4 {
+    font-family:sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+    color: #fff;
+    text-shadow: 0px 5px 30px rgba(0, 0, 0, .8);
+}
+
+.image-card {
+    height: 100%;
+}
+
+/* ----------News---------- */
+
+.news {
+    background-image: url(../image/spoons-with-powder-condiments-copy-space.jpg);
+    background-position: 0 45%;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.news-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.news:before {
+    position: absolute;
+    content: '';
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+.news-container h3 {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    margin: 10px;
+}
+
+.email-form {
+    flex-direction: column;
+}
+
+.email-form input {
+    width: 38vw;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: none;
+    padding-left: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    outline: none;
+}
+
+.news-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 13px 16px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.news-btn:hover {
+    background-color: inherit;
+    border: 1px solid #fff;
+}
+
+/* ----------Footer--------- */
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+

@@ -1,0 +1,225 @@
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .slide-btn {
+        font-size: 1.2vw;
+    }
+
+    .food-container {
+        display: grid;
+        margin: 1vw 10vw;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(29, 10vw);
+        gap: 1vw;
+    }
+
+    .food-img-info {
+        bottom: 1vw;
+    }
+
+    .sandwich {
+        grid-area: 1/1/5/5;
+    }
+
+    .pizza {
+        grid-area: 1/5/3/9;
+    }
+
+    .potatoes {
+        grid-area: 5/6/8/9;
+    }
+
+    .shrimp {
+        grid-area: 8/1/12/9;
+    }
+
+    .chicken {
+        grid-area: 12/1/16/5;
+    }
+
+    .burger {
+        grid-area: 12/5/15/9;
+    }
+
+    .macaroni {
+        grid-area: 15/5/20/9;
+    }
+
+    .pasta {
+        grid-area: 29/5/32/9;
+    }
+
+    .food-img-info h4 {
+        font-size: 2.5vw;
+    }
+
+    .sandwich h4,
+    .pizza h4,
+    .pasta h4,
+    .potatoes h4,
+    .chicken h4
+    {
+        font-size: 2vw;
+    }
+
+    .footer .col {
+        width: 33%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+
+        .footer .col {
+          width: 50%;
+        }
+        .footer .col h1 {
+          font-size: 14px;
+        }
+        .footer .col ul li {
+          font-size: 13px;
+        }
+    
+      .footer .col {
+        width: 100%;
+      }
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+
+    .search-bar {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .search-form {
+        flex-direction: row;
+    }
+
+    .search-bar h2 {
+        font-size: 1.4vw;
+        font-weight: 400;
+        margin: 0 2vw 0 1vw;
+    }
+
+    .search-form input {
+        padding: 1.5vw 2vw;
+    }
+
+    .search-form button {
+        padding: 0.7vw 2.5vw;
+        font-size: 1.6vw;
+        margin-left: 1vw;
+    }
+
+    .food-description {
+        font-size: 1.5vw;
+    }
+
+
+    .food-container {
+        margin: 1vw 10vw;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(21, 6vw);
+    }
+
+    .macaroni {
+        grid-area: 1/1/6/6;
+    }
+
+    .pizza {
+        grid-area: 1/6/3/10;
+    }
+
+    .pasta {
+        grid-area: 3/6/6/10;
+    }
+
+    .potatoes {
+        grid-area: 4/10/7/15;
+    }
+
+    .shrimp {
+        grid-area: 6/1/10/10;
+    }
+
+    .chicken {
+        grid-area: 10/5/14/9;
+    }
+
+    .burger {
+        grid-area: 14/1/18/9;
+    }
+
+    .sandwich {
+        grid-area: 17/9/22/15;
+    }
+
+    .effect-container {
+        overflow: hidden;
+    }
+
+    .image-card img {
+        transition: 0.4s ease;
+    }
+
+    .effect-container:hover .image-card img {
+        transform: scale(1.08);
+    }
+
+
+    .food-img-info h4 {
+        font-size: 1.2vw;
+        color: #4c4c4c;
+        transition: .4s;
+        bottom: 0;
+    }
+
+    article:hover .food-img-info h4 {
+        transform: translateY(-10px);
+        color: #fff;
+    }
+
+    .news-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .news-container h3 {
+        font-size: 2vw;
+        margin-right: 5vw;
+    }
+
+    .news-btn {
+        margin-left: 1vw;
+    }
+
+    .email-form {
+        display: block;
+    }
+
+    .news-text {
+        margin-top: 0;
+        margin-right: 10px;
+    }
+
+        .contain {
+          width: 1200px;
+          margin: 0 auto;
+        }
+      
+        
+        .contain .social {
+          width: 1000px;
+          display: block;
+        }
+        .social h1 {
+          margin: 0px;
+        }
+}
