@@ -22,7 +22,9 @@ Techniques and Features🧵
 
 .  Color gradient
 
-.  FlexBox
+.  Flex Box
+
+.  CSS Subgrids
 
 Please give me a star⭐
 ==========================================
